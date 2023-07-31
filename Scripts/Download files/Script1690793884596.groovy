@@ -20,6 +20,13 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import java.io.File
 import org.apache.commons.io.FilenameUtils
 import org.openqa.selenium.chrome.ChromeOptions
+
+String path = System.getProperty("user.dir");
+String DOWNLOAD_FOLDER_PATH = path + File. separator + "My Downloads";
+Map prefs = [('download.default_directory'): DOWNLOAD_FOLDER_PATH];
+// Map preferences key to manipulate page's language.
+RunConfiguration.setWebDriverPreferencesProperty("prefs",prefs)
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://demo.automationtesting.in/FileDownload.html')
@@ -39,16 +46,16 @@ WebUI.switchToWindowTitle('File input - Multi select')
 
 
 
-ChromeOptions options = new ChromeOptions();
-String path = System.getProperty("user.dir");
-String downloadPath = path + File.separator + "My Downloads";
+//ChromeOptions options = new ChromeOptions();
+//String path = System.getProperty("user.dir");
+//String downloadPath = path + File.separator + "My Downloads";
 //String downloadsPath = System.getProperty("user.home") + "/Downloads";
-println (downloadPath)
+//println (downloadPath)
 
-Map<String, Object> chromePrefs = new HashMap<String, Object>()
-chromePrefs.put("profile.default_content_settings.popups", 0);
-chromePrefs.put("download.default_directory", downloadPath)
-chromePrefs.put("download.prompt_for_download", false)
+//Map<String, Object> chromePrefs = new HashMap<String, Object>()
+//chromePrefs.put("profile.default_content_settings.popups", 0);
+//chromePrefs.put("download.default_directory", downloadPath)
+//chromePrefs.put("download.prompt_for_download", false)
 
 WebUI.enableSmartWait()
 
