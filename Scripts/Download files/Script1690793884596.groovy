@@ -33,30 +33,6 @@ WebUI.navigateToUrl('https://demo.automationtesting.in/FileDownload.html')
 
 WebUI.switchToWindowTitle('File input - Multi select')
 
-
-//String projectDir = FilenameUtils.separatorsToSystem(RunConfiguration.getProjectDir())
-//String path = FilenameUtils.concat(projectDir, 'My Downloads')
-
-
-//String path = System.getProperty("user.dir");
-
-//String otherFolder = path + File.separator + "My Downloads";
-
-//println(otherFolder)
-
-
-
-//ChromeOptions options = new ChromeOptions();
-//String path = System.getProperty("user.dir");
-//String downloadPath = path + File.separator + "My Downloads";
-//String downloadsPath = System.getProperty("user.home") + "/Downloads";
-//println (downloadPath)
-
-//Map<String, Object> chromePrefs = new HashMap<String, Object>()
-//chromePrefs.put("profile.default_content_settings.popups", 0);
-//chromePrefs.put("download.default_directory", downloadPath)
-//chromePrefs.put("download.prompt_for_download", false)
-
 WebUI.enableSmartWait()
 
 WebUI.click(findTestObject('Object Repository/a_Download'))
