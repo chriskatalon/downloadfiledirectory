@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 106.0.0.0,,,2023-08-02 16:46:29,2023-08-02 16:47:10,40.260s,PASSED
+,,,,,,,
+Test Cases/Download files,Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:47:10,39.821s,PASSED
+Start listener action : enableSauceLabs,Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:30,0.039s,PASSED
+"path = System.getProperty(""user.dir"")",Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:30,0.006s,PASSED
+"DOWNLOAD_FOLDER_PATH = path + separator + ""My Downloads""",Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:30,0.002s,PASSED
+"prefs = [""download.default_directory"":DOWNLOAD_FOLDER_PATH]",Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:30,0.001s,PASSED
+"setWebDriverPreferencesProperty(""prefs"", prefs)",Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:30,0.007s,PASSED
+"openBrowser("""")",Chrome 106.0.0.0,,,2023-08-02 16:46:30,2023-08-02 16:46:53,22.614s,PASSED
+"navigateToUrl(""https://demo.automationtesting.in/FileDownload.html"")",Chrome 106.0.0.0,,,2023-08-02 16:46:53,2023-08-02 16:46:56,3.435s,PASSED
+"switchToWindowTitle(""File input - Multi select"")",Chrome 106.0.0.0,,,2023-08-02 16:46:56,2023-08-02 16:46:56,0.053s,PASSED
+enableSmartWait(),Chrome 106.0.0.0,,,2023-08-02 16:46:56,2023-08-02 16:46:56,0.017s,PASSED
+"click(findTestObject(""Object Repository/a_Download""))",Chrome 106.0.0.0,,,2023-08-02 16:46:56,2023-08-02 16:46:59,2.903s,PASSED
+delay(10),Chrome 106.0.0.0,,,2023-08-02 16:46:59,2023-08-02 16:47:09,10.083s,PASSED
+closeBrowser(),Chrome 106.0.0.0,,,2023-08-02 16:47:09,2023-08-02 16:47:10,0.148s,PASSED
+Start listener action : autoUpdateJobStatus,Chrome 106.0.0.0,,,2023-08-02 16:47:10,2023-08-02 16:47:10,0.002s,PASSED

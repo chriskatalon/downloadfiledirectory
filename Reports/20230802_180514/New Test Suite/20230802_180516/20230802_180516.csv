@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 106.0.0.0,,,2023-08-02 18:05:18,2023-08-02 18:07:15,1m - 56.924s,FAILED
+,,,,,,,
+Test Cases/Download files,Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:44,24.999s,PASSED
+Start listener action : enableSauceLabs,Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:19,0.039s,PASSED
+"path = System.getProperty(""user.dir"")",Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:19,0.002s,PASSED
+"DOWNLOAD_FOLDER_PATH = path + separator + ""My Downloads""",Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:19,0.001s,PASSED
+"prefs = [""download.default_directory"":DOWNLOAD_FOLDER_PATH]",Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:19,0.001s,PASSED
+"setWebDriverPreferencesProperty(""prefs"", prefs)",Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:19,0.003s,PASSED
+"openBrowser("""")",Chrome 106.0.0.0,,,2023-08-02 18:05:19,2023-08-02 18:05:25,5.589s,PASSED
+"navigateToUrl(""https://demo.automationtesting.in/FileDownload.html"")",Chrome 106.0.0.0,,,2023-08-02 18:05:25,2023-08-02 18:05:32,7.086s,PASSED
+"switchToWindowTitle(""File input - Multi select"")",Chrome 106.0.0.0,,,2023-08-02 18:05:32,2023-08-02 18:05:32,0.075s,PASSED
+enableSmartWait(),Chrome 106.0.0.0,,,2023-08-02 18:05:32,2023-08-02 18:05:32,0.020s,PASSED
+"click(findTestObject(""Object Repository/a_Download""))",Chrome 106.0.0.0,,,2023-08-02 18:05:32,2023-08-02 18:05:34,1.534s,PASSED
+delay(10),Chrome 106.0.0.0,,,2023-08-02 18:05:34,2023-08-02 18:05:44,10.031s,PASSED
+closeBrowser(),Chrome 106.0.0.0,,,2023-08-02 18:05:44,2023-08-02 18:05:44,0.136s,PASSED
+Start listener action : autoUpdateJobStatus,Chrome 106.0.0.0,,,2023-08-02 18:05:44,2023-08-02 18:05:44,0.002s,PASSED
+,,,,,,,
+Test Cases/failed,Chrome 106.0.0.0,,,2023-08-02 18:06:29,2023-08-02 18:07:15,46.625s,FAILED
+Start listener action : enableSauceLabs,Chrome 106.0.0.0,,,2023-08-02 18:06:29,2023-08-02 18:06:29,0.003s,PASSED
+"openBrowser(""google.com"")",Chrome 106.0.0.0,,,2023-08-02 18:06:29,2023-08-02 18:06:38,9.229s,PASSED
+"click(findTestObject(""a_Download""))",Chrome 106.0.0.0,,,2023-08-02 18:06:38,2023-08-02 18:07:15,37.363s,FAILED
+Start listener action : autoUpdateJobStatus,Chrome 106.0.0.0,,,2023-08-02 18:07:15,2023-08-02 18:07:15,0.006s,PASSED
