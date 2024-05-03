@@ -4,7 +4,10 @@
    <name>downloadfiledirectory</name>
    <tag></tag>
    <UUID>8dac646c-e035-4673-9312-c443b274eb34</UUID>
+   <createdVersion>9.3.1</createdVersion>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedVersion>9.3.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>/Users/quan.trinh/git/downloadfiledirectory/downloadfiledirectory.prj</projectFileLocation>
    <sourceContent>

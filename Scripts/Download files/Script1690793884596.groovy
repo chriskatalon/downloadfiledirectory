@@ -21,6 +21,7 @@ import java.io.File
 import org.apache.commons.io.FilenameUtils
 import org.openqa.selenium.chrome.ChromeOptions
 
+// Set the default download location to be the folder "My Downloads" on this project"
 String path = System.getProperty("user.dir");
 String DOWNLOAD_FOLDER_PATH = path + File. separator + "My Downloads";
 Map prefs = [('download.default_directory'): DOWNLOAD_FOLDER_PATH];
@@ -37,6 +38,14 @@ WebUI.enableSmartWait()
 
 WebUI.click(findTestObject('Object Repository/a_Download'))
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.closeBrowser()
+
+String fileName = "samplefile.pdf"
+
+String downloadedFilePath = DOWNLOAD_FOLDER_PATH + '/' + "${fileName}"
+
+println(downloadedFilePath)
+
+WebUI.openBrowser("$downloadedFilePath")
