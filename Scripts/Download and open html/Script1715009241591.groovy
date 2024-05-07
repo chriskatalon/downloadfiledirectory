@@ -23,12 +23,12 @@ import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 
 // Set the default download location to be the folder "My Downloads" on this project"
 String path = System.getProperty('user.dir')
-
+//
 String DOWNLOAD_FOLDER_PATH = (path + File.separator) + 'Downloads'
-
+//
 Map prefs = [('download.default_directory') : DOWNLOAD_FOLDER_PATH]
-
-// Map preferences key to manipulate page's language.
+//
+//Map preferences key to manipulate page's language.
 RunConfiguration.setWebDriverPreferencesProperty('prefs', prefs)
 
 WebUI.openBrowser('')
@@ -49,10 +49,12 @@ WebUI.closeBrowser()
 String fileName = 'htmldoc.html'
 
 // Pass your file path to downloadedFilePath
-String downloadedFilePath = (DOWNLOAD_FOLDER_PATH + '/') + "$fileName"
+String downloadedFilePath = (DOWNLOAD_FOLDER_PATH + '/') + "$fileName" 
 
 println(downloadedFilePath)
 
-WebUI.openBrowser(('file:///') + downloadedFilePath)
+// Browsers typically require standard URLs (e.g., https://www.example.com/) to locate and fetch resources, including HTML files. 
+// to open an html with Chrome, we need file:///
 
+WebUI.openBrowser(('file:///') + downloadedFilePath)
 
